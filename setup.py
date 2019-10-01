@@ -15,6 +15,8 @@ testing_extras = [
     'pytest-cov',
 ]
 
+install_requires = open('requirements.txt').read().strip().split('\n')
+
 setup(
     name='pagarme-python',
     version=sdk.VERSION,
@@ -29,7 +31,7 @@ setup(
     keywords='Payment, pagarme',
     include_package_data=True,
     zip_safe=False,
-    install_requires=['requests>2.20.0'],
+    install_requires=install_requires,
     classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',

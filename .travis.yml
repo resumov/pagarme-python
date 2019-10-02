@@ -15,4 +15,3 @@ script:
   - py.test --cov pagarme
 after_success:
   - coveralls
-
